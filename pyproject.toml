@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "enterprise-llm-lab"
+version = "0.1.0"
+description = "Enterprise LLM fine-tuning, synthetic data generation, and autonomous agents."
+authors = ["AI Engineer"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.0.0"
+transformers = "^4.40.0"
+peft = "^0.10.0"
+trl = "^0.8.0"
+datasets = "^2.18.0"
+pydantic = "^2.6.0"
+ollama = "^0.1.7"
+google-genai = "^0.1.0"
+pandas = "^2.2.0"
+unsloth = "^2024.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.2.0"
+ruff = "^0.3.0"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
